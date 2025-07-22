@@ -1,23 +1,34 @@
 {
   "canisters": {
-    "backend": {
-      "main": "backend/app.mo",
-      "type": "motoko",
-      "args": "--enhanced-orthogonal-persistence"
+    "MetaPoem_backend": {
+      "main": "src/MetaPoem_backend/main.mo",
+      "type": "motoko"
     },
-    "frontend": {
-      "dependencies": ["backend"],
-      "frontend": {
-        "entrypoint": "frontend/index.html"
-      },
-      "source": ["frontend/dist"],
-      "type": "assets"
+    "MetaPoem_frontend": {
+      "dependencies": [
+        "MetaPoem_backend"
+      ],
+      "source": [
+        "src/MetaPoem_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "MetaPoem_frontend"
+    },
+    "signalling": {
+      "main": "src/signalling/main.mo",
+      "type": "motoko"
+    },
+      "internet_identity": {
+      "type": "pull",
+      "id": "rdmx6-jaaaa-aaaaa-aaadq-cai"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
     }
   },
   "output_env_file": ".env",
-  "defaults": {
-    "build": {
-      "packtool": "mops sources"
-    }
-  }
+  "version": 1
 }
