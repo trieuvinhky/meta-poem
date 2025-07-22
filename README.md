@@ -1,25 +1,38 @@
-# Hello, world!
+# 📚 MetaPoem
 
-"Hello, world!" projects are a common starting point for developers learning new languages or platforms, as it provides a simple demonstration of how a programming language can be written for an application.
+MetaPoem leverages blockchain technology to build a flexible and transparent network for unstructured data and dynamic content. It creates a decentralized "verse" where information flows freely and securely — unconstrained by traditional intermediaries and verifiable on-chain.
 
-This application's logic is written in [Motoko](https://internetcomputer.org/docs/motoko/main/getting-started/motoko-introduction), a programming language designed specifically for developing canisters on ICP.
+---
 
-## Deploying from ICP Ninja
+## 🌐 Overview
 
-When viewing this project in ICP Ninja, you can deploy it directly to the mainnet for free by clicking "Run" in the upper right corner. Open this project in ICP Ninja:
+MetaPoem is a Web3-native platform designed for creators, developers, and platforms that manage dynamic or unstructured data (e.g., social posts, real-time feeds, collaborative writing, etc.). Powered by smart contracts and oracles, it enables open, traceable, and immutable data flow.
 
-[![](https://icp.ninja/assets/open.svg)](https://icp.ninja/i?g=https://github.com/dfinity/examples/motoko/hello_world)
+---
 
-## Project structure
+## ✨ Features
 
-The `/backend` folder contains the Motoko canister, `app.mo`. The `/frontend` folder contains web assets for the application's user interface. The user interface is written with plain JavaScript, but any frontend framework can be used.
+- 🔗 **Decentralized Data Verse**  
+  Store, index, and verify unstructured content on-chain or through IPFS.
 
-Edit the `mops.toml` file to add [Motoko dependencies](https://mops.one/) to the project.
+- 🧠 **Content as Smart Assets**  
+  Every post, update, or piece of content can be tokenized, owned, and interacted with via smart contracts.
 
-## Build and deploy from the command-line
+- 🛠 **Flexible Data Schema**  
+  Designed for extensibility — supports JSON-like dynamic fields and relationships.
 
-To migrate your ICP Ninja project off of the web browser and develop it locally, follow these steps. These steps are necessary if you want to deploy this project for long-term, production use on the mainnet.
+- 🧾 **Transparent Edit History**  
+  All updates are immutably recorded, enabling provenance and version control.
 
-### 1. Download your project from ICP Ninja using the 'Download files' button on the upper left corner under the pink ninja star icon.
+- 🔐 **Verifiable Authorship**  
+  Content is signed and anchored with blockchain identity.
 
-### 2. Open the `BUILD.md` file for further instructions.
+---
+
+## 🛠 Tech Stack
+
+- **Backend:** Motoko / Rust on Internet Computer
+- **Frontend:** React + TypeScript (Material 3)
+- **Storage:** IPFS, Internet Computer Canisters
+- **Identity:** Internet Identity, Web3Auth
+- **Smart Contracts:** Custom schema-based logic for dynamic content
